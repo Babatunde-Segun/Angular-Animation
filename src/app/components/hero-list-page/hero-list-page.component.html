@@ -1,9 +1,10 @@
-<div class="container" [@pageAnimations]="isTrue">
+<div class="container" [@pageAnimations]="isTrue" [@filterAnimation]="isTrue">
   <ol class="hero">
     <li
       style="display: flex; gap: 2rem; align-items: center"
       class="hero-items"
       *ngFor="let item of items; trackBy: trackByItems"
+      [@flyInOut]
     >
       <p>{{ item.name }} + {{ item.emoji }}</p>
       <button (click)="onDelete(item.id)">Delete</button>

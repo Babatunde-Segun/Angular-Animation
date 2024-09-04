@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { filterStaggerAnimation, staggerAnimation } from '../../animation';
+import {
+  filterStaggerAnimation,
+  flyAnimation,
+  staggerAnimation,
+} from '../../animation';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -7,7 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'app-hero-list-page',
   standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive],
-  animations: [staggerAnimation, filterStaggerAnimation],
+  animations: [staggerAnimation, filterStaggerAnimation, flyAnimation],
 
   templateUrl: './hero-list-page.component.html',
   styleUrl: './hero-list-page.component.css',
