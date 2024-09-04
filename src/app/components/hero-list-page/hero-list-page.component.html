@@ -1,0 +1,24 @@
+<div class="container" [@pageAnimations]="isTrue">
+  <ol class="hero">
+    <li
+      style="display: flex; gap: 2rem; align-items: center"
+      class="hero-items"
+      *ngFor="let item of items; trackBy: trackByItems"
+    >
+      <p>{{ item.name }} + {{ item.emoji }}</p>
+      <button (click)="onDelete(item.id)">Delete</button>
+    </li>
+  </ol>
+</div>
+<div
+  class="flex"
+  style="margin-top: 3rem; display: flex"
+  [@filterAnimation]="isTrue"
+>
+  <button routerLink="/about" routerLinkActive="active" class="btn">
+    about
+  </button>
+  <button routerLink="/home" routerLinkActive="active" class="btn">home</button>
+</div>
+
+<button (click)="onAdd()">Add</button>
