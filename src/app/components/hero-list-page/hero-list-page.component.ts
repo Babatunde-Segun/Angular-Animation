@@ -6,6 +6,9 @@ import {
 } from '../../animation';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-hero-list-page',
