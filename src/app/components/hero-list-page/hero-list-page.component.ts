@@ -27,8 +27,8 @@ export class HeroListPageComponent {
 
   onAdd() {
     const id = Math.floor(Math.random() * 100 + 1);
-    const name = 'nameRa';
-    const emoji = '';
+    const name = 'nameRa' + Math.floor(Math.random() * 100 + 1);
+    const emoji = '?';
     const newItem = {
       id,
       name,

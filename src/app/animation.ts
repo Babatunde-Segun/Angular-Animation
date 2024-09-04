@@ -84,7 +84,7 @@ export const filterStaggerAnimation = trigger('filterAnimation', [
     query(
       ':enter',
       [
-        style({ opacity: 0, width: 0 }),
+        style({ opacity: 0, width: 100 }),
         stagger(50, [
           animate('300ms ease-out', style({ opacity: 1, width: '*' })),
         ]),
@@ -94,7 +94,9 @@ export const filterStaggerAnimation = trigger('filterAnimation', [
   ]),
   transition(':decrement', [
     query(':leave', [
-      stagger(50, [animate('300ms ease-out', style({ opacity: 0, width: 0 }))]),
+      stagger(50, [
+        animate('300ms ease-out', style({ opacity: 0, width: 100 })),
+      ]),
     ]),
   ]),
 ]);
