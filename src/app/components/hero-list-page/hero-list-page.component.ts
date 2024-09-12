@@ -26,6 +26,7 @@ export class HeroListPageComponent {
     { name: 'Item 2', emoji: '🍎', id: 2 },
     { name: 'Item 3', emoji: '🍊', id: 3 },
     { name: 'Item 4', emoji: '🍇', id: 4 },
+    { name: 'Item 5', emoji: '🍏', id: 5 },
   ];
 
   onAdd() {
